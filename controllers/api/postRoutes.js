@@ -1,5 +1,5 @@
 const router = require('express').Router();
-
+const withAuth = require('../../utils/auth')
 // postroute wich creates a post
 // the route should use they post model
 // the req.dot body will contain the new post data
@@ -7,7 +7,7 @@ const router = require('express').Router();
 
 
 
-router.post('/', (req, res)  => {
+router.post('/',withAuth, (req, res)  => {
 // create new post using the they req.body 
 const newPost = {
     ...
@@ -18,7 +18,7 @@ const newPost = {
 })
 
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id',withAuth, (req, res) => { 
  const id = parseInt (req.params.id)
  
 if(id < 10) {
