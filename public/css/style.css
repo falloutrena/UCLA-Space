@@ -1,24 +1,129 @@
-header, .project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
-}
-
-.no-button {
-  background: none;
-  border: none;
+/* main page styling */
+* {
+  margin: 0;
   padding: 0;
-  cursor: pointer;
-  color: #1b89bc;
+  box-sizing: border-box;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer; 
+}
+
+#nav {
+  background-color: #828185;
+  margin-bottom: 10px;
+
+}
+
+nav ul {
+  list-style-type: none;
+  margin-bottom: 10px;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: right;
+}
+
+nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 100%;
 }
 
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
+nav li a:hover {
+  background-color: #696b71;
+  color: white;
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
+#main {
+  width: 100%;
+  min-height: 100px;
+  
 }
+
+
+#body {
+  min-height: 400px;
+
+}
+
+#content1,
+#content2,
+#content3,
+#content4
+ {
+  width: 100%;
+  min-height: 100px;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+
+}
+
+.one,
+.two,
+.three,
+.four {
+  text-align: center;
+  
+}
+
+#name,
+#time
+{
+  width: 20%;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 3px;
+  margin-left: 60px;
+}
+
+#name {
+  margin-top: 5px;
+}
+
+
+#button {
+  width: 10%;
+  margin-left: 60px;
+  margin-bottom: 10px;
+  padding: 5px 15px; 
+  border: 1px solid black;
+  border-radius: 2px;
+  text-align: center;
+}
+
+#button:hover {
+  background-color: #696b71;
+  color: white;
+}
+
+footer{
+  background-color:#828185;
+  padding: 5px;
+  text-align: center;
+}
+
+/* profile page styling */
+h2 {
+  text-align: center;
+  text-shadow: #7e9af5;
+}
+
+textarea {
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: #7e9af5;
+}
+
+#time {
+  border: 1px solid black;
+  box-shadow: #7e9af5;
+}
+
+
+
