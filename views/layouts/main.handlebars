@@ -16,22 +16,15 @@
       
       </h1>
       <nav>
-        <!-- Conditionally render homepage links -->
-        {{#if home_in}}
-        <a href="/">home</a> |
-        <!-- Conditionally render my profile links -->
-        {{#if profile_in}}
-        <a href="/profile">profile</a> |
         <!-- Conditionally render login or logout links -->
-        {{#if logged_in}}
+        <a href="/">Home</a>
+        <a href="/profile">Profile</a>
+        {{if logged_in}}
+        <a href="/profile">profile</a> |
         <button class="no-button" id="logout">logout</button>
         {{else}}
         <a href="/login">login</a>
-        {{/if}}
-        <!-- Conditionally render sign up links -->
-        {{#if sign_in}}
-        <a href="/sign">sign up</a> |
-       {{/if}}
+        {{if}}
       </nav>
     </header>
     <main class="container container-fluid mt-5">
@@ -39,7 +32,7 @@
       {{{ body }}}
     </main>
     <footer>
-      
+       Create by Team-Gobi
     </footer>
   </div>
 
