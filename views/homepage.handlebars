@@ -1,11 +1,14 @@
 {{#each post as |post|}}
-<div id="title">{{post.title}}</div>
-<div id="content1"
-class="one"><p>{{post.body}}</p></div>
+<a href='/posts/{{post.id}}'>
+    <div id='title'>{{post.title}}</div>
+    <div id='content1' class='one'><p>{{post.body}}</p></div>
+  </a>
 <div id="name">Name:{{post.user.username}}</div>
 <div id="time">Time: {{format_date post.date_create}}</div>
 <div id="button"> Post a reply</div>
 {{/each}}
+
+
 
 
             
