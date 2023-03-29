@@ -1,20 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-    <link rel="stylesheet" href="./css/jass.css">
-    <link rel="stylesheet" href="./css/style.css">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UCLA Space</title>
-</head>
-<body>
-  <div id="post">
-    <h2>Welcome (Username)!</h2>
-    <textarea name="content" id="content" cols="40" rows="50"></textarea>
-  </div>
-  <div class="time">Time:</div>
-
-</body>
-</html>
-
+<div class="profile">
+  <form>
+    <label for="title">{{title}}</label>
+    <input type="text" id="title" name="title" required>
+    <label for="description">{{body}}</label>
+    <textarea id="description" name="description" required></textarea>
+  </form>
+  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+  <p>
+    <button class="post">Post a reply</button>
+  </p>
+</div>
