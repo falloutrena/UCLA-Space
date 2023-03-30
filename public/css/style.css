@@ -2,13 +2,15 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   cursor: pointer; 
+ 
+ 
+  
 }
 
 #nav {
-  background-color: #828185;
+  background-color:#d2e5f4 ;
   margin-bottom: 10px;
 
 }
@@ -34,43 +36,40 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: #696b71;
+  background-color: #89d4fc;
   color: white;
 }
 
 #main {
+  padding: 100px;
+  height: 100%;
   width: 100%;
   min-height: 100px;
+  background-image: url('https://wallpapercave.com/wp/wp3287720.jpg');
+  background-size: cover;
+  
   
 }
 
-
-#body {
-  min-height: 400px;
-
+p {
+  text-align: center;
+  
 }
+  
 
-#content1,
-#content2,
-#content3,
-#content4
- {
+#content1 {
+  height: 200px;
   width: 100%;
   min-height: 100px;
   padding-top: 20px;
-  padding-left: 40px;
+  padding-left: 20px;
   padding-right: 40px;
   text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
 
 }
 
-.one,
-.two,
-.three,
-.four {
-  text-align: center;
-  
-}
 
 #name,
 #time
@@ -79,7 +78,7 @@ nav li a:hover {
   border: 1px solid black;
   border-radius: 5px;
   margin-bottom: 3px;
-  margin-left: 60px;
+  margin-left: 30px;
 }
 
 #name {
@@ -88,7 +87,7 @@ nav li a:hover {
 
 
 #button {
-  width: 10%;
+  width: 20%;
   margin-left: 60px;
   margin-bottom: 10px;
   padding: 5px 15px; 
@@ -98,15 +97,11 @@ nav li a:hover {
 }
 
 #button:hover {
-  background-color: #696b71;
+  background-color: #89d4fc;
   color: white;
 }
 
-footer{
-  background-color:#828185;
-  padding: 5px;
-  text-align: center;
-}
+
 
 /* profile page styling */
 h2 {
