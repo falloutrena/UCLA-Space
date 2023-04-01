@@ -1,16 +1,21 @@
 <div class="profile">
+  <div class="col-3 p3 mb2">
   <form id="newPostForm">
     <label for="title">Title:</label>
     <input type="text" id="title" name="title" required>
-    <label for="description">Body</label>
+    </div>
+    <div class="col-sm-9 p-3">
+    <label for="description">Body:</label>
     <textarea id="description" name="description" required></textarea>
-
+    </div>
     <button id="newPostSubmit">Post a reply</button>
   </form>
 </div>
 
+
+
 <div>
-  <h2>Posts</h2>
+  <h3>Posts:</h3>
   <div id='posts'>
     {{#each posts}}
     <div class='post'>
