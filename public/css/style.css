@@ -4,15 +4,17 @@
   padding: 0;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   cursor: pointer; 
- 
- 
-  
 }
 
-#nav {
-  background-color:#d2e5f4 ;
-  margin-bottom: 10px;
+h2 {
+  color:white;
+  margin-top: 20px;
+  text-decoration: underline;
+}
 
+h3 {
+  margin-top: 10px;
+  text-decoration: underline;
 }
 
 nav ul {
@@ -36,8 +38,19 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: #89d4fc;
+  background-color: #8263b5;
   color: white;
+}
+
+label {
+  color: white;
+  font-size: 2rem;
+}
+
+#nav {
+  background-color:#d5bad4 ;
+  margin-bottom: 10px;
+  margin: 10px;
 }
 
 #main {
@@ -45,17 +58,9 @@ nav li a:hover {
   height: 100%;
   width: 100%;
   min-height: 100px;
-  background-image: url('https://wallpapercave.com/wp/wp3287720.jpg');
+  background-image: url('https://images.unsplash.com/photo-1508898578281-774ac4893c0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80');
   background-size: cover;
-  
-  
 }
-
-p {
-  text-align: center;
-  
-}
-  
 
 #content1 {
   height: 200px;
@@ -67,9 +72,8 @@ p {
   text-align: center;
   border: 1px solid black;
   border-radius: 10px;
-
+  background-color: white;
 }
-
 
 #name,
 #time
@@ -79,6 +83,7 @@ p {
   border-radius: 5px;
   margin-bottom: 3px;
   margin-left: 30px;
+  background-color: white;
 }
 
 #name {
@@ -93,32 +98,77 @@ p {
   padding: 5px 15px; 
   border: 1px solid black;
   border-radius: 2px;
+  background-color: white;
   text-align: center;
+
 }
 
 #button:hover {
-  background-color: #89d4fc;
+  background-color: #8263b5;
   color: white;
 }
 
-
-
-/* profile page styling */
-h2 {
-  text-align: center;
-  text-shadow: #7e9af5;
+#title {
+  height: 30px;
+  margin-left: 60px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  
+  
 }
 
-textarea {
-  text-align: center;
+#description {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  height: 100px;
+  width: 100%;
+  
+}
+
+#newPostSubmit {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#newPostSubmit:hover {
+  background-color:#8263b5;
+  color: white;
+}
+
+.post-name {
+  color: white;
+}
+.profile,
+.row 
+{
+  background-image: url('https://images.unsplash.com/photo-1508898578281-774ac4893c0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80');
+  background-size: cover;
+}
+
+
+#posts {
+  background-image: url('https://images.unsplash.com/photo-1508898578281-774ac4893c0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80');
+  background-size: cover;
+
+}
+
+.post {
   border: 1px solid black;
-  box-shadow: #7e9af5;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
 }
 
-#time {
-  border: 1px solid black;
-  box-shadow: #7e9af5;
-}
+
+
+
+
+
 
 
 
