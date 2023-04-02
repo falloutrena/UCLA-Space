@@ -12,19 +12,29 @@
     <div id="nav">
     <nav>
         <ul>
-            <li><a href="#">Log in</a></li>
-            <li><a href="#">Sign Up</a></li>
-            <li><a href="#">My Profile</a></li>
-            <li><a href="#">Home</a></li>
+            <li><a href="http://localhost:3001/login">Sign Up</a></li>
+            <li><a href="http://localhost:3001/login">Log in</a></li>
+            <li><a href="http://localhost:3001/profile">My Profile</a></li>
+            <li><a href="http://localhost:3001">Home</a></li>
         </ul>
     </nav>
     </div>
     <div id="main" class="content">
         <div id="body">
-            <div id="content1" class="one"><p></p></div>
-            <div id="name">Name:</div>
-            <div id="time">Time:</div>
+            <div id="body">
+                <div id="content1" class="one"><p></p></div>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <div class="col-sm-9 p-3">
+                <label for="time">Time:</label>
+                <input type="text" id="time" name="time">
+                </div>
+            </form>
+            
             <div id="button">Post a reply</div>
+
+            </div>
         </div>
         
     </div>
