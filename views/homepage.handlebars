@@ -1,7 +1,7 @@
 {{#each post as |post|}}
 <a href='/posts/{{post.id}}'>
     <div id='title'>{{post.title}}</div>
-    <div id='content1' class='one'><p>{{post.body}}</p></div>
+    <div id='content1' class='one'><textarea>{{post.body}}</textarea></div>
   </a>
 <div id="name">Name:{{post.user.username}}</div>
 <div id="time">Time: {{format_date post.date_create}}</div>

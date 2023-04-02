@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
   cursor: pointer; 
 }
 
@@ -47,6 +46,8 @@ label {
   font-size: 2rem;
 }
 
+
+
 #nav {
   background-color:#d5bad4 ;
   margin: 10px;
@@ -66,7 +67,6 @@ label {
   width: 100%;
   min-height: 100px;
   padding-top: 20px 40px 0 20px;
-  text-align: center;
   border: 1px solid black;
   border-radius: 10px;
   background-color: white;
