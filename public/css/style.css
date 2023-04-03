@@ -2,55 +2,23 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   cursor: pointer; 
 }
 
-h2 {
-  color:white;
-  margin-top: 20px;
-  text-decoration: underline;
+body {
+  background-image: url('https://images.unsplash.com/photo-1508898578281-774ac4893c0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80') ;
 }
 
-h3 {
-  margin-top: 10px;
-  text-decoration: underline;
-}
-
-nav ul {
-  list-style-type: none;
-  margin-bottom: 10px;
-  padding: 0;
-  overflow: hidden;
-}
-
-nav li {
-  float: right;
-}
-
-nav li a {
-  display: block;
+header {
   color: black;
-  text-align: center;
-  font-size: 1.2rem;
-  padding: 14px 16px;
-  text-decoration: none;
+  background-color: rgb(232, 170, 245);
 }
 
-nav li a:hover {
-  background-color: #8263b5;
-  color: white;
-}
-
-label {
-  color: white;
-  font-size: 2rem;
-}
-
-
-
-#nav {
-  background-color:#d5bad4 ;
-  margin: 10px;
+h2,
+label 
+ {
+ color: white;
 }
 
 #main {
@@ -66,9 +34,9 @@ label {
   height: 200px;
   width: 100%;
   min-height: 100px;
-  padding-top: 20px 40px 0 20px;
-  border: 1px solid black;
   border-radius: 10px;
+  padding:10px;
+  color:black;
   background-color: white;
 }
 
@@ -76,7 +44,7 @@ label {
   width: 40%;
   border: 1px solid black;
   border-radius: 5px;
-  margin:10px 0 3px 0;
+  margin:30px 0 3px 0;
   padding: 3px;
   background-color: white;
 }
@@ -87,18 +55,17 @@ label {
   padding: 2px;
   border: none;
   border-radius: 3px;
+  background-color: white;
 }
-
 
 #button {
   width: 30%;
-  margin: 0 0 10px 80px;
+  margin: 5px 0 10px 0px;
   padding: 5px 15px; 
   border: 1px solid black;
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: white;
   text-align: center;
-
 }
 
 #button:hover {
@@ -111,8 +78,8 @@ label {
   margin: 0 0 30px 60px;
   padding: 10px;
   border-radius: 5px;
-  
-  
+  color: white;
+  font-size: 2rem;
 }
 
 #description {
@@ -121,32 +88,20 @@ label {
   margin: 5px;
   padding: 10px;
   border-radius: 5px;
- 
-  
 }
 
-#newPostForm,
-#posts {
-  background-image: url('https://images.unsplash.com/photo-1508898578281-774ac4893c0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80');
-  background-size: cover;
+#newPostForm {
+ background-image: url('https://images.unsplash.com/photo-1508898578281-774ac4893c0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80');
+ background-size: cover;
+ border-radius: 10px;
 }
-
-.post-name {
-  color: white;
-}
-.profile,
-.row 
-{
-  background-image: url('https://images.unsplash.com/photo-1508898578281-774ac4893c0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80');
-  background-size: cover;
-}
-
 
 .post {
   border: 1px solid black;
-  margin: 40px;
+  margin: 20px;
   padding: 10px;
   background-color: white;
+  border-radius: 10px;
 }
 
 

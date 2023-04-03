@@ -15,11 +15,11 @@ router.get('/', async (req, res) => {
     });
     // Serialize data so the template can read it
     const posts = postData.map((post) => post.get({ plain: true }));
-    
+    console.log(posts);
     // Pass serialized data and session flag into template
-    res.render('homepage', { 
-     posts, 
-      logged_in: req.session.logged_in 
+    res.render('homepage', {
+      posts,
+      logged_in: req.session.logged_in,
     });
   } catch (err) {
     res.status(500).json(err);
@@ -36,16 +36,16 @@ router.get('/posts/:id', async (req, res) => {
         },
         {
           model: Comment,
-          include: [User]
-        }
+          include: [User],
+        },
       ],
     });
 
     const post = postData.get({ plain: true });
-console.log (post)
+    console.log(post);
     res.render('post', {
       ...post,
-      logged_in: req.session.logged_in
+      logged_in: req.session.logged_in,
     });
   } catch (err) {
     res.status(500).json(err);
@@ -58,21 +58,19 @@ router.get('/profile', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const postData = await Post.findAll({
       where: {
-        user_id: req.session.user_id
-      }
-    })
-console.log (postData)
+        user_id: req.session.user_id,
+      },
+    });
     if (postData) {
-      const posts = postData.map((post) => post.get({
-        plain: true
-      }))
-      console.log (posts)
-      res.render ('profile', {posts
-      })
+      const posts = postData.map((post) =>
+        post.get({
+          plain: true,
+        })
+      );
+      res.render('profile', { posts, logged_in: req.session.logged_in });
     } else {
-      res.status(404).end()
+      res.status(404).end();
     }
-
   } catch (err) {
     res.status(500).json(err);
   }
